@@ -1,0 +1,5 @@
+git+https://www.github.com/keras-team/keras-contrib.git
+keras==2.2.4
+pydot
+GraphViz
+# apt-get install graphviz
