@@ -6,6 +6,12 @@ import process_data
 import pickle
 from keras.utils.vis_utils import plot_model
 from keras.optimizers import SGD,Adam
+import tensorflow as tf
+print (tf.__version__)
+if tf.test.gpu_device_name():
+    print('Default GPU Device: {}'.format(tf.test.gpu_device_name()))
+else:
+    print("Please install GPU version of TF")
 
 EMBED_DIM = 200
 BiRNN_UNITS = 200
